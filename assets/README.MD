@@ -1,0 +1,1 @@
+- High Level architecture of the Cloudio bot explains the major tools and frameworks used for the integration of the bot.
