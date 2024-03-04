@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Chatbot Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #chatbot-button {
+            width: 60px;
+            height: 60px;
+            background-color: #0084ff; /* Example color - adjust as needed */
+            border-radius: 50%;
+            cursor: pointer;
+            /* Add chatbot icon image inside */
+        }
+
+        #chatbot-iframe {
+            display: none; /* Initially hidden */
+            position: fixed;
+            bottom: 20px;
+            right: 80px; /* Adjust to the right of the button */
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
+         </section>
+
+    <section id="features">
+         </section>
+
+    <section id="about">
+         </section>
+
+
+    <div id="chatbot-container">
+        <div id="chatbot-button">
+            </div>
+        <div id="chatbot-iframe">
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1750013d-e251-4303-93bc-9ad1b9d50227"></iframe>
+          
+        </div>
+    </div>
+
+    <script>
+        const chatbotButton = document.getElementById('chatbot-button');
+        const chatbotIframe = document.getElementById('chatbot-iframe');
+
+        chatbotButton.addEventListener('click', () => {
+            chatbotIframe.style.display = chatbotIframe.style.display === 'block' ? 'none' : 'block';
+        });
+    </script> 
+</body>
+</html>
