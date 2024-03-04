@@ -61,8 +61,31 @@
         </ul>
     </nav>
 
-    <section id="introduction">
+    <section id="introduction
+        <h1>Introduction</h1>
         <img src='./assets/Cloudio High-level Architecture.png' alt="High level architecture" width=500></img>
+    <h2>Chatbot System Architecture</h2>
+    <p>This project showcases a chatbot system integrated with various services.  It leverages Google Cloud's Dialogflow as the core chatbot engine, enabling natural language interactions.</p>
+
+    <p>Here's a breakdown of the key components:</p>
+
+    <ul>
+        <li><strong>Knowledge Base (Top Right):</strong> Stores information and data the chatbot uses to respond to user queries.</li>
+        <li><strong>Fulfillment Services (Bottom Right):</strong> 
+            <ul>
+                <li><strong>Google Cloud SQL:</strong> Managed relational database service for storing chatbot-related data.</li>
+                <li><strong>Cloud Run:</strong> Serverless platform to execute custom code triggered by the chatbot. </li>
+            </ul>
+        </li>
+        <li><strong>Integrations (Left Side):</strong>
+            <ul>
+                <li><strong>Telephony and Web Interface:</strong> Enables the chatbot to interact with users through phone calls and web interfaces.</li>
+                <li><strong>Twilio (Bottom Left):</strong> Facilitates WhatsApp integration for the chatbot. </li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>This architecture demonstrates how a comprehensive chatbot system can interact with users across diverse channels while leveraging various data sources and services.</p>
     </section>
 
     <section id="features">
